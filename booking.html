@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Celebrity Barbers & Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">
+        Celebrity <span>Barbers & Salon</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="barbering-salon.html">Barbering & Salon</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="booking.html">Booking</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-hero">
+        <p class="eyebrow">YOUR NEXT APPOINTMENT</p>
+        <h1>Book a Visit</h1>
+        <p>Complete the form to request an appointment.</p>
+    </section>
+
+    <section class="section form-layout">
+        <div>
+            <p class="eyebrow">LET'S GET YOU BOOKED</p>
+            <h2>Choose Your Service</h2>
+
+            <p>
+                Tell us which service you would like and what date
+                and time work best for you.
+            </p>
+
+            <div class="info-box">
+                <h3>Important Information</h3>
+                <p>
+                    This demonstration form does not send or save
+                    appointments. A server or form service is needed
+                    to receive real booking requests.
+                </p>
+            </div>
+        </div>
+
+        <form class="form-card" onsubmit="alert('This is a demonstration form. Your booking has not been sent.'); return false;">
+
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="you@example.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number">
+
+            <label for="service">Choose a Service *</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Classic Haircut</option>
+                <option>Fade & Line-up</option>
+                <option>Beard Trim</option>
+                <option>Hair Styling</option>
+                <option>Wash & Style</option>
+                <option>Style Consultation</option>
+            </select>
+
+            <label for="date">Preferred Date *</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time *</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="notes">Additional Details</label>
+            <textarea id="notes" name="notes" rows="4"
+                      placeholder="Tell us about your preferred style"></textarea>
+
+            <button class="button" type="submit">
+                Send Appointment Request
+            </button>
+
+            <p class="small-note">* Required fields</p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <h3>Celebrity Barbers & Salon</h3>
+    <p>&copy; 2026 Celebrity Barbers & Salon.</p>
+</footer>
+
+</body>
+</html>
+```
